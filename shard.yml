@@ -11,7 +11,7 @@ targets:
     main: src/cli.cr
 
 scripts:
-  postinstall: make bin
+  postinstall: shards build --no-debug
 
 # https://github.com/crystal-lang/shards/pull/126
 executables:
